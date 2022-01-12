@@ -190,6 +190,14 @@ void initialize()
 	Cone* cone2 = new Cone(glm::vec3(8.0, -10.0, -100.0), 6.0, 16.0);
 	cone2->setColor(glm::vec3(0, 1, 0));
 	sceneObjects.push_back(cone2);
+
+	Plane* wall = new Plane(glm::vec3(-50., -15, -200),
+		glm::vec3(50., -15, -200),
+		glm::vec3(50., 50, -200),
+		glm::vec3(-50., 50, -200));
+	wall->setColor(glm::vec3(0.95, 0.95, 0.95));
+	wall->setSpecularity(false);
+	sceneObjects.push_back(wall);
 }
 
 
