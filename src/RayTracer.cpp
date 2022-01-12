@@ -143,24 +143,35 @@ void initialize()
 	plane->setSpecularity(false);
 	sceneObjects.push_back(plane);
 
-	Sphere *sphere1 = new Sphere(glm::vec3(-5.0, 0.0, -90.0), 15.0);
-	sphere1->setColor(glm::vec3(0, 0, 1));
-	sphere1->setReflectivity(true, 0.8);
-	sceneObjects.push_back(sphere1); 
+	Sphere* sphere1 = new Sphere(glm::vec3(-12.0, 0.0, -110.0), 15.0);
+	sphere1->setColor(glm::vec3(1, 0, 0));  
+	sphere1->setReflectivity(true, 0.8); 
+	sceneObjects.push_back(sphere1);		
 
-	SceneObject* sphere2 = new Sphere(glm::vec3(5, -10, -60), 5);
-	sphere2->setColor(glm::vec3(0, 1, 0));
-	sphere2->setShininess(5);
+	Sphere* sphere2 = new Sphere(glm::vec3(8.0, 8.0, -70.0), 3.0);
+	sphere2->setColor(glm::vec3(0, 0, 1));
+	sphere2->setTransparency(true, 0.3);
 	sceneObjects.push_back(sphere2);
 
-	SceneObject* sphere3 = new Sphere(glm::vec3(5, 5, -70), 4);
-	sphere3->setColor(glm::vec3(1, 0, 0));
-	sphere3->setSpecularity(false);
-	sceneObjects.push_back(sphere3);
+	Sphere* sphere3 = new Sphere(glm::vec3(13.0, -2.0, -70.0), 4.0);
+	sceneObjects.push_back(sphere3);	
 
-	SceneObject* sphere4 = new Sphere(glm::vec3(10, 10, -60), 3);
-	sphere4->setColor(glm::vec3(1, 1, 0));
+	Sphere* sphere4 = new Sphere(glm::vec3(-8.0, 5.0, -70), 3.0);
+	sphere4->setColor(glm::vec3(0, 0, 1));
+	sphere4->setTransparency(true, 0.3);
 	sceneObjects.push_back(sphere4);
+
+	Cylinder* cylinder = new Cylinder(glm::vec3(13.0, -15.0, -70.0), 3.0, 10.0);
+	cylinder->setColor(glm::vec3(1, 0, 0));
+	sceneObjects.push_back(cylinder);
+
+	Cone* cone = new Cone(glm::vec3(-8.0, -15.0, -70.0), 4.0, 12.0);
+	cone->setColor(glm::vec3(0.62, 0.12, 0.94));
+	sceneObjects.push_back(cone);
+
+	Cone* cone2 = new Cone(glm::vec3(8.0, -10.0, -100.0), 6.0, 16.0);
+	cone2->setColor(glm::vec3(0, 1, 0));
+	sceneObjects.push_back(cone2);
 }
 
 
