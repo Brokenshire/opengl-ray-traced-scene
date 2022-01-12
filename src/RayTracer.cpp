@@ -30,6 +30,7 @@ const float YMIN = -HEIGHT * 0.5;
 const float YMAX = HEIGHT * 0.5;
 
 vector<SceneObject*> sceneObjects;
+TextureBMP texture;
 
 
 // Computes the colour value obtained by tracing a ray and finding its 
@@ -50,7 +51,7 @@ glm::vec3 trace(Ray ray, int step)
 		int stripeWidth = 5;
 		int iz = (ray.hit.z + 100) / stripeWidth;
 		int ix = (ray.hit.x + 100) / stripeWidth;
-		int k = iz % 2; //2 colors
+		int k = iz % 2; // 2 colors
 		int j = ix % 2;
 		if ((k && j) || (!k && !j)) {
 			color = glm::vec3(0, 1, 0);
@@ -61,24 +62,33 @@ glm::vec3 trace(Ray ray, int step)
 		obj->setColor(color);
 	}
 
+	if (ray.index == 3) {
+		// Textured sphere
+		glm::vec3 norm = glm::normalize(ray.hit - glm::vec3(5.0, 5.0, -70.0));
+		float texcoords = (0.5 - atan2(norm.z, norm.x) + 3.14) / (2 * 3.14);
+		float texcoordt = 0.5 + asin(norm.y) / 3.14;
+		color = texture.getColorAt(texcoords, texcoordt);
+		obj->setColor(color);
+	}
+
 	color = obj->lighting(lightPos, -ray.dir, ray.hit); // Object's lighting
 	glm::vec3 lightVec = lightPos - ray.hit; // Vector from the point of intersection to the light source
 	Ray shadowRay(ray.hit, lightVec); // Shadow ray at the point of intersection
 	shadowRay.closestPt(sceneObjects); // Closest point of intersection on the shadow ray
-	float lightDist = glm::length(lightVec); //distance to the light source
+	float lightDist = glm::length(lightVec); // distance to the light source
 
-		// fog
+	// Fog
 	int z1 = -70;
 	int z2 = -150;
 	float t = (ray.hit.z - z1) / (z2 - z1);
 	color = (1 - t) * color + glm::vec3(t, t, t);
 
-	if (shadowRay.index > -1 && shadowRay.dist < lightDist) { //If shadow ray hits and object and the disance to the point of intersection on this object is smaller than the distance to the light source
+	if (shadowRay.index > -1 && shadowRay.dist < lightDist) { // If shadow ray hits and object and the disance to the point of intersection on this object is smaller than the distance to the light source
 		if (shadowRay.index == 3 || shadowRay.index == 1) {
-			color = 0.6f * obj->getColor(); //0.4 = ambient scale factor
+			color = 0.6f * obj->getColor(); // 0.4 = ambient scale factor
 		}
 		else {
-			color = 0.2f * obj->getColor(); //0.2 = ambient scale factor
+			color = 0.2f * obj->getColor(); // 0.2 = ambient scale factor
 		}
 	}
 
@@ -219,6 +229,8 @@ void display()
 // orthographc projection matrix for drawing the the ray traced image.
 void initialize()
 {
+	texture = TextureBMP("GreenTexture.bmp");
+
 	glMatrixMode(GL_PROJECTION);
 	gluOrtho2D(XMIN, XMAX, YMIN, YMAX);
 
