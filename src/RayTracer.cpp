@@ -104,6 +104,44 @@ glm::vec3 trace(Ray ray, int step)
 }
 
 
+// Creates a single cube scene object and adds it to the list of scene objects.
+void drawCube(float x, float y, float z, float lwh, glm::vec3 colour)
+{
+	glm::vec3 A = glm::vec3(x, y, z);
+	glm::vec3 B = glm::vec3(x + lwh, y, z);
+	glm::vec3 C = glm::vec3(x + lwh, y + lwh, z);
+	glm::vec3 D = glm::vec3(x, y + lwh, z);
+	glm::vec3 E = glm::vec3(x + lwh, y, z - lwh);
+	glm::vec3 F = glm::vec3(x + lwh, y + lwh, z - lwh);
+	glm::vec3 G = glm::vec3(x, y + lwh, z - lwh);
+	glm::vec3 H = glm::vec3(x, y, z - lwh);
+
+	Plane* plane1 = new Plane(A, B, C, D);
+	plane1->setColor(colour);
+	sceneObjects.push_back(plane1);
+
+	Plane* plane2 = new Plane(B, E, F, C);
+	plane2->setColor(colour);
+	sceneObjects.push_back(plane2);
+
+	Plane* plane3 = new Plane(E, H, G, F);
+	plane3->setColor(colour);
+	sceneObjects.push_back(plane3);
+
+	Plane* plane4 = new Plane(D, G, H, A);
+	plane4->setColor(colour);
+	sceneObjects.push_back(plane4);
+
+	Plane* plane5 = new Plane(D, C, F, G);
+	plane5->setColor(colour);
+	sceneObjects.push_back(plane5);
+
+	Plane* plane6 = new Plane(H, E, B, A);
+	plane6->setColor(colour);
+	sceneObjects.push_back(plane6);
+}
+
+
 void display()
 {
 	float xp, yp; // grid point
@@ -151,10 +189,10 @@ void initialize()
 
 	glClearColor(0, 0, 0, 1);
 
-	Plane* plane = new Plane(glm::vec3(-50., -15, -40), //Point A
-		glm::vec3(50., -15, -40), //Point B
-		glm::vec3(50., -15, -200), //Point C
-		glm::vec3(-50., -15, -200)); //Point D
+	Plane* plane = new Plane(glm::vec3(-50., -15, -40), 
+		glm::vec3(50., -15, -40),
+		glm::vec3(50., -15, -200), 
+		glm::vec3(-50., -15, -200));
 	plane->setColor(glm::vec3(0.8, 0.8, 0));
 	plane->setSpecularity(false);
 	sceneObjects.push_back(plane);
@@ -198,6 +236,8 @@ void initialize()
 	wall->setColor(glm::vec3(0.95, 0.95, 0.95));
 	wall->setSpecularity(false);
 	sceneObjects.push_back(wall);
+
+	drawCube(-1.0, -15.0, -70.0, 8, glm::vec3(1, 0.45, 1));
 }
 
 
