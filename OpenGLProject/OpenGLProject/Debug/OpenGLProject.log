@@ -1,5 +1,0 @@
-﻿  RayTracer.cpp
-D:\MEGA\Coding\C++\opengl-ray-traced-scene\src\SceneObject.h(21,15): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\MEGA\Coding\C++\opengl-ray-traced-scene\src\SceneObject.h(22,15): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\MEGA\Coding\C++\opengl-ray-traced-scene\src\SceneObject.h(23,15): warning C4305: 'initializing': truncation from 'double' to 'float'
-  OpenGLProject.vcxproj -> D:\MEGA\Coding\C++\opengl-ray-traced-scene\OpenGLProject\Debug\OpenGLProject.exe
