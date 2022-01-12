@@ -151,10 +151,10 @@ void initialize()
 
 	glClearColor(0, 0, 0, 1);
 
-	Plane* plane = new Plane(glm::vec3(-20., -15, -40), //Point A
-		glm::vec3(20., -15, -40), //Point B
-		glm::vec3(20., -15, -200), //Point C
-		glm::vec3(-20., -15, -200)); //Point D
+	Plane* plane = new Plane(glm::vec3(-50., -15, -40), //Point A
+		glm::vec3(50., -15, -40), //Point B
+		glm::vec3(50., -15, -200), //Point C
+		glm::vec3(-50., -15, -200)); //Point D
 	plane->setColor(glm::vec3(0.8, 0.8, 0));
 	plane->setSpecularity(false);
 	sceneObjects.push_back(plane);
