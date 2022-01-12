@@ -1,10 +1,9 @@
-/*----------------------------------------------------------
-* COSC363  Ray Tracer
-*
-*  The cylinder class
-*  This is a subclass of Object, and hence implements the
-*  methods intersect() and normal().
--------------------------------------------------------------*/
+/*
+ * Copyright (c) 2022 Jack Brokenshire.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 #ifndef H_CYLINDER
 #define H_CYLINDER
@@ -12,8 +11,7 @@
 #include "SceneObject.h"
 
 /**
- * Defines a simple Cylinder located at 'center'
- * with the specified radius
+ * Defines a simple Cylinder located at 'center' with the specified radius.
  */
 class Cylinder : public SceneObject
 {
@@ -24,7 +22,7 @@ private:
 	float height = 1;
 
 public:
-	Cylinder() {};  //Default constructor creates a unit cylinder
+	Cylinder() {}; // Default constructor creates a unit cylinder
 
 	Cylinder(glm::vec3 c, float r, float h) : center(c), radius(r), height(h) {}
 

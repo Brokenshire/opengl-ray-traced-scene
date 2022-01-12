@@ -1,26 +1,25 @@
-/*----------------------------------------------------------
-* COSC363  Ray Tracer
-*
-*  The cylinder class
-*  This is a subclass of Object, and hence implements the
-*  methods intersect() and normal().
--------------------------------------------------------------*/
+/*
+ * Copyright (c) 2022 Jack Brokenshire.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 #include "Cylinder.h"
 #include <math.h>
 
 /**
-* Cylinder's intersection method.  The input is a ray.
+* Cylinder's intersection method. The input is a ray.
 */
 float Cylinder::intersect(glm::vec3 p0, glm::vec3 dir)
 {
-    glm::vec3 vdif = p0 - center;   //Vector s (see Slide 28)
+    glm::vec3 vdif = p0 - center;
     float a = (dir.x * dir.x) + (dir.z * dir.z);
     float b = 2 * (dir.x * vdif.x + dir.z * vdif.z);
     float c = vdif.x * vdif.x + vdif.z * vdif.z - (radius * radius);
     float delta = b * b - (4 * a * c);
 
-    if (delta < 0.0) return -1.0;    //includes zero and negative values
+    if (delta < 0.0) return -1.0; // includes zero and negative values
     
     if (fabs(delta) < 0.001) return -1.0;
 
