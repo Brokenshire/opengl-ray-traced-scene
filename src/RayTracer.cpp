@@ -79,6 +79,11 @@ glm::vec3 trace(Ray ray, int step)
 		color = color + (rho * reflectedColor);
 	}
 
+	if (obj->isTransparent() && step < MAX_STEPS) {
+		float tho = obj->getTransparencyCoeff();
+		color = color * (1 - tho);
+	}
+
 	return color;
 }
 
