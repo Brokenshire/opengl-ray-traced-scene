@@ -65,9 +65,21 @@ glm::vec3 trace(Ray ray, int step)
 	glm::vec3 lightVec = lightPos - ray.hit; // Vector from the point of intersection to the light source
 	Ray shadowRay(ray.hit, lightVec); // Shadow ray at the point of intersection
 	shadowRay.closestPt(sceneObjects); // Closest point of intersection on the shadow ray
+	float lightDist = glm::length(lightVec); //distance to the light source
 
-	if (shadowRay.index > -1) {
-		color = 0.2f * obj->getColor(); // 0.2 = ambient scale factor 
+		// fog
+	int z1 = -70;
+	int z2 = -150;
+	float t = (ray.hit.z - z1) / (z2 - z1);
+	color = (1 - t) * color + glm::vec3(t, t, t);
+
+	if (shadowRay.index > -1 && shadowRay.dist < lightDist) { //If shadow ray hits and object and the disance to the point of intersection on this object is smaller than the distance to the light source
+		if (shadowRay.index == 3 || shadowRay.index == 1) {
+			color = 0.6f * obj->getColor(); //0.4 = ambient scale factor
+		}
+		else {
+			color = 0.2f * obj->getColor(); //0.2 = ambient scale factor
+		}
 	}
 
 	if (obj->isReflective() && step < MAX_STEPS) {
@@ -188,8 +200,8 @@ void display()
 
 			Ray ray = Ray(eye, dir);
 
-			glm::vec3 col = antiAliasing(eye, cellX, cellY, xp, yp); //Anti-aliasing
-			//glm::vec3 col = trace(ray, 1); // Trace the primary ray and get the colour value
+			//glm::vec3 col = antiAliasing(eye, cellX, cellY, xp, yp); //Anti-aliasing
+			glm::vec3 col = trace(ray, 1); // Trace the primary ray and get the colour value
 			glColor3f(col.r, col.g, col.b);
 			glVertex2f(xp, yp); // Draw each cell with its color value
 			glVertex2f(xp + cellX, yp);
