@@ -142,6 +142,28 @@ void drawCube(float x, float y, float z, float lwh, glm::vec3 colour)
 }
 
 
+// Uses the concept of Supersampling to add anti-aliasing to the scene.
+glm::vec3 antiAliasing(glm::vec3 eye, float cellX, float cellY, float xp, float yp)
+{
+	glm::vec3 colour(0);
+
+	Ray ray = Ray(eye, glm::vec3(xp + cellX * 0.25, yp + cellY * 0.25, -EDIST));
+	colour += trace(ray, 1);
+
+	ray = Ray(eye, glm::vec3(xp + cellX * 0.25, yp + cellY * 0.75, -EDIST));
+	colour += trace(ray, 1);
+
+	ray = Ray(eye, glm::vec3(xp + cellX * 0.75, yp + cellY * 0.25, -EDIST));
+	colour += trace(ray, 1);
+
+	ray = Ray(eye, glm::vec3(xp + cellX * 0.75, yp + cellY * 0.75, -EDIST));
+	colour += trace(ray, 1);
+
+	colour *= glm::vec3(0.25);
+	return colour;
+}
+
+
 void display()
 {
 	float xp, yp; // grid point
@@ -166,7 +188,8 @@ void display()
 
 			Ray ray = Ray(eye, dir);
 
-			glm::vec3 col = trace(ray, 1); // Trace the primary ray and get the colour value
+			glm::vec3 col = antiAliasing(eye, cellX, cellY, xp, yp); //Anti-aliasing
+			//glm::vec3 col = trace(ray, 1); // Trace the primary ray and get the colour value
 			glColor3f(col.r, col.g, col.b);
 			glVertex2f(xp, yp); // Draw each cell with its color value
 			glVertex2f(xp + cellX, yp);
