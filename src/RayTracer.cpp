@@ -13,6 +13,7 @@
 #include "SceneObject.h"
 #include "Ray.h"
 #include <GL/freeglut.h>
+#include "Plane.h"
 using namespace std;
 
 const float WIDTH = 20.0;
@@ -41,6 +42,16 @@ glm::vec3 trace(Ray ray, int step)
 	if (ray.index == -1) return backgroundCol; // No intersection
 	obj = sceneObjects[ray.index]; // Object on which the closest point of intersection is found
 
+	if (ray.index == 0) {
+		//Stripe pattern
+		int stripeWidth = 5;
+		int iz = (ray.hit.z) / stripeWidth;
+		int k = iz % 2; //2 colors
+		if (k == 0) color = glm::vec3(0, 1, 0);
+		else color = glm::vec3(1, 1, 0.5);
+		obj->setColor(color);
+	}
+
 	color = obj->lighting(lightPos, -ray.dir, ray.hit); // Object's lighting
 	glm::vec3 lightVec = lightPos - ray.hit; // Vector from the point of intersection to the light source
 	Ray shadowRay(ray.hit, lightVec); // Shadow ray at the point of intersection
@@ -48,6 +59,15 @@ glm::vec3 trace(Ray ray, int step)
 
 	if (shadowRay.index > -1) {
 		color = 0.2f * obj->getColor(); // 0.2 = ambient scale factor 
+	}
+
+	if (obj->isReflective() && step < MAX_STEPS) {
+		float rho = obj->getReflectionCoeff();
+		glm::vec3 normalVec = obj->normal(ray.hit);
+		glm::vec3 reflectedDir = glm::reflect(ray.dir, normalVec);
+		Ray reflectedRay(ray.hit, reflectedDir);
+		glm::vec3 reflectedColor = trace(reflectedRay, step + 1);
+		color = color + (rho * reflectedColor);
 	}
 
 	return color;
@@ -101,9 +121,17 @@ void initialize()
 
 	glClearColor(0, 0, 0, 1);
 
+	Plane* plane = new Plane(glm::vec3(-20., -15, -40), //Point A
+		glm::vec3(20., -15, -40), //Point B
+		glm::vec3(20., -15, -200), //Point C
+		glm::vec3(-20., -15, -200)); //Point D
+	plane->setColor(glm::vec3(0.8, 0.8, 0));
+	plane->setSpecularity(false);
+	sceneObjects.push_back(plane);
+
 	Sphere *sphere1 = new Sphere(glm::vec3(-5.0, 0.0, -90.0), 15.0);
 	sphere1->setColor(glm::vec3(0, 0, 1));
-	sphere1->setSpecularity(false);
+	sphere1->setReflectivity(true, 0.8);
 	sceneObjects.push_back(sphere1); 
 
 	SceneObject* sphere2 = new Sphere(glm::vec3(5, -10, -60), 5);
@@ -113,6 +141,7 @@ void initialize()
 
 	SceneObject* sphere3 = new Sphere(glm::vec3(5, 5, -70), 4);
 	sphere3->setColor(glm::vec3(1, 0, 0));
+	sphere3->setSpecularity(false);
 	sceneObjects.push_back(sphere3);
 
 	SceneObject* sphere4 = new Sphere(glm::vec3(10, 10, -60), 3);
