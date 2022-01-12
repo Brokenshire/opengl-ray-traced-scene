@@ -14,6 +14,9 @@
 #include "Ray.h"
 #include <GL/freeglut.h>
 #include "Plane.h"
+#include "Cone.h"
+#include "Cylinder.h"
+#include "TextureBMP.h"
 using namespace std;
 
 const float WIDTH = 20.0;
@@ -43,12 +46,18 @@ glm::vec3 trace(Ray ray, int step)
 	obj = sceneObjects[ray.index]; // Object on which the closest point of intersection is found
 
 	if (ray.index == 0) {
-		//Stripe pattern
+		// Chequered pattern
 		int stripeWidth = 5;
-		int iz = (ray.hit.z) / stripeWidth;
+		int iz = (ray.hit.z + 100) / stripeWidth;
+		int ix = (ray.hit.x + 100) / stripeWidth;
 		int k = iz % 2; //2 colors
-		if (k == 0) color = glm::vec3(0, 1, 0);
-		else color = glm::vec3(1, 1, 0.5);
+		int j = ix % 2;
+		if ((k && j) || (!k && !j)) {
+			color = glm::vec3(0, 1, 0);
+		}
+		else {
+			color = glm::vec3(1, 1, 0.5);
+		}
 		obj->setColor(color);
 	}
 
