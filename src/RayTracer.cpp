@@ -84,6 +84,22 @@ glm::vec3 trace(Ray ray, int step)
 		color = color * (1 - tho);
 	}
 
+	if (obj->isRefractive() && step < MAX_STEPS)
+	{
+		float rho = obj->getRefractionCoeff();
+		float refractiveIndex = obj->getRefractiveIndex();
+		float eta = 1 / refractiveIndex;
+		glm::vec3 n = obj->normal(ray.hit);
+		glm::vec3 g = glm::refract(ray.dir, n, eta);
+		Ray refrRay(ray.hit, g);
+		refrRay.closestPt(sceneObjects);
+		glm::vec3 m = obj->normal(refrRay.hit);
+		glm::vec3 h = glm::refract(g, -m, 1.0f / eta);
+		Ray r(refrRay.hit, h);
+		glm::vec3 refractedColor = trace(r, step + 1);
+		color = color + (rho * refractedColor);
+	}
+
 	return color;
 }
 
@@ -151,6 +167,7 @@ void initialize()
 	Sphere* sphere2 = new Sphere(glm::vec3(8.0, 8.0, -70.0), 3.0);
 	sphere2->setColor(glm::vec3(0, 0, 1));
 	sphere2->setTransparency(true, 0.3);
+	sphere2->setRefractivity(true, 0.8, 1.01);
 	sceneObjects.push_back(sphere2);
 
 	Sphere* sphere3 = new Sphere(glm::vec3(13.0, -2.0, -70.0), 4.0);
@@ -159,6 +176,7 @@ void initialize()
 	Sphere* sphere4 = new Sphere(glm::vec3(-8.0, 5.0, -70), 3.0);
 	sphere4->setColor(glm::vec3(0, 0, 1));
 	sphere4->setTransparency(true, 0.3);
+	sphere4->setRefractivity(true, 0.8, 1.01);
 	sceneObjects.push_back(sphere4);
 
 	Cylinder* cylinder = new Cylinder(glm::vec3(13.0, -15.0, -70.0), 3.0, 10.0);
