@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(opengl-ray-traced-scene)
+project(scene)
 
 add_executable(RayTracer.out RayTracer.cpp Ray.cpp SceneObject.cpp Sphere.cpp Cone.cpp Cylinder.cpp Plane.cpp TextureBMP.cpp)
 

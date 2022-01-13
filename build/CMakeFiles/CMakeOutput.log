@@ -1,1 +1,381 @@
 The system is: Windows - 10.0.19044 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 13/01/2022 3:51:21 pm.
+Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x86\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.75
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "d:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/3.12.18081601-MSVC_2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 13/01/2022 3:51:24 pm.
+Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\Hostx64\x86\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\3.12.18081601-MSVC_2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.23
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "d:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/3.12.18081601-MSVC_2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: d:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_3d8eb.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 13/01/2022 3:51:27 pm.
+Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_3d8eb.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_3d8eb.dir\Debug\".
+  Creating directory "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_3d8eb.dir\Debug\cmTC_3d8eb.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_3d8eb.dir\Debug\cmTC_3d8eb.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3d8eb.dir\Debug\\" /Fd"cmTC_3d8eb.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27045 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3d8eb.dir\Debug\\" /Fd"cmTC_3d8eb.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_3d8eb.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_3d8eb.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_3d8eb.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_3d8eb.dir\Debug\testCCompiler.obj
+  cmTC_3d8eb.vcxproj -> D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_3d8eb.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_3d8eb.dir\Debug\cmTC_3d8eb.tlog\unsuccessfulbuild".
+  Touching "cmTC_3d8eb.dir\Debug\cmTC_3d8eb.tlog\cmTC_3d8eb.lastbuildstate".
+Done Building Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_3d8eb.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.32
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: d:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_bfd99.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 13/01/2022 3:51:30 pm.
+Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_bfd99.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_bfd99.dir\Debug\".
+  Creating directory "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_bfd99.dir\Debug\cmTC_bfd99.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_bfd99.dir\Debug\cmTC_bfd99.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bfd99.dir\Debug\\" /Fd"cmTC_bfd99.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27045 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bfd99.dir\Debug\\" /Fd"cmTC_bfd99.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_bfd99.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_bfd99.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_bfd99.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_bfd99.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_bfd99.vcxproj -> D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_bfd99.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_bfd99.dir\Debug\cmTC_bfd99.tlog\unsuccessfulbuild".
+  Touching "cmTC_bfd99.dir\Debug\cmTC_bfd99.tlog\cmTC_bfd99.lastbuildstate".
+Done Building Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_bfd99.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.26
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: d:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_b9263.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 13/01/2022 3:51:33 pm.
+Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_b9263.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_b9263.dir\Debug\".
+  Creating directory "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_b9263.dir\Debug\cmTC_b9263.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_b9263.dir\Debug\cmTC_b9263.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b9263.dir\Debug\\" /Fd"cmTC_b9263.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\feature_tests.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27045 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b9263.dir\Debug\\" /Fd"cmTC_b9263.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\feature_tests.c"
+  feature_tests.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_b9263.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_b9263.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_b9263.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_b9263.dir\Debug\feature_tests.obj
+  cmTC_b9263.vcxproj -> D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_b9263.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_b9263.dir\Debug\cmTC_b9263.tlog\unsuccessfulbuild".
+  Touching "cmTC_b9263.dir\Debug\cmTC_b9263.tlog\cmTC_b9263.lastbuildstate".
+Done Building Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_b9263.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.80
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: d:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_5e86a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 13/01/2022 3:51:36 pm.
+Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_5e86a.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_5e86a.dir\Debug\".
+  Creating directory "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_5e86a.dir\Debug\cmTC_5e86a.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_5e86a.dir\Debug\cmTC_5e86a.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5e86a.dir\Debug\\" /Fd"cmTC_5e86a.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27045 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_5e86a.dir\Debug\\" /Fd"cmTC_5e86a.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_5e86a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_5e86a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_5e86a.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_5e86a.dir\Debug\testCXXCompiler.obj
+  cmTC_5e86a.vcxproj -> D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_5e86a.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_5e86a.dir\Debug\cmTC_5e86a.tlog\unsuccessfulbuild".
+  Touching "cmTC_5e86a.dir\Debug\cmTC_5e86a.tlog\cmTC_5e86a.lastbuildstate".
+Done Building Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_5e86a.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.87
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: d:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_ffe79.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 13/01/2022 3:51:38 pm.
+Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_ffe79.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_ffe79.dir\Debug\".
+  Creating directory "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_ffe79.dir\Debug\cmTC_ffe79.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_ffe79.dir\Debug\cmTC_ffe79.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ffe79.dir\Debug\\" /Fd"cmTC_ffe79.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27045 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ffe79.dir\Debug\\" /Fd"cmTC_ffe79.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_ffe79.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_ffe79.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_ffe79.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_ffe79.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_ffe79.vcxproj -> D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_ffe79.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_ffe79.dir\Debug\cmTC_ffe79.tlog\unsuccessfulbuild".
+  Touching "cmTC_ffe79.dir\Debug\cmTC_ffe79.tlog\cmTC_ffe79.lastbuildstate".
+Done Building Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_ffe79.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.00
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: d:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"MSBuild.exe" "cmTC_94332.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 13/01/2022 3:51:40 pm.
+Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_94332.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_94332.dir\Debug\".
+  Creating directory "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_94332.dir\Debug\cmTC_94332.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_94332.dir\Debug\cmTC_94332.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_94332.dir\Debug\\" /Fd"cmTC_94332.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\feature_tests.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27045 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_94332.dir\Debug\\" /Fd"cmTC_94332.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\feature_tests.cxx"
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.16.27023\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_94332.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_94332.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MEGA/Coding/C++/opengl-ray-traced-scene/build/CMakeFiles/CMakeTmp/Debug/cmTC_94332.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_94332.dir\Debug\feature_tests.obj
+  cmTC_94332.vcxproj -> D:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\Debug\cmTC_94332.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_94332.dir\Debug\cmTC_94332.tlog\unsuccessfulbuild".
+  Touching "cmTC_94332.dir\Debug\cmTC_94332.tlog\cmTC_94332.lastbuildstate".
+Done Building Project "d:\MEGA\Coding\C++\opengl-ray-traced-scene\build\CMakeFiles\CMakeTmp\cmTC_94332.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.78
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
