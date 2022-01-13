@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 
 project(scene)
 
-add_executable(RayTracer.out RayTracer.cpp Ray.cpp SceneObject.cpp Sphere.cpp Cone.cpp Cylinder.cpp Plane.cpp TextureBMP.cpp)
+add_executable(RayTracer.out src/RayTracer.cpp src/Ray.cpp src/SceneObject.cpp
+     src/Sphere.cpp src/Cone.cpp src/Cylinder.cpp src/Plane.cpp src/TextureBMP.cpp)
 
 find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
